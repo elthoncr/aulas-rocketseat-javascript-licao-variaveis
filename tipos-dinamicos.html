@@ -1,0 +1,49 @@
+<script>
+  /*
+  
+    Vamos falar sobre a linguagem fracamente tipada e dinâmica do JS.
+    - Variáveis não precisam ter um tipo previamente definido.
+    - Podemos mudar o conteúdo da váriável.
+  */
+
+  /**
+   * As váriaveis em JS não precisam ter um tipo previamente definido.
+   * Exemplo:
+   */
+
+  let clima
+  console.log(clima)
+  //Valor que retorna: undefined
+  //let clima quando foi declarado, não foi informado qual valor ele recebe. Por este motivo ele tem um valor undefined.
+
+  //Se JS fosse fortemente tipada e estatica seria desta forma:
+  /**
+   * Seria necessário por exemplo informar na declaração da váriavel o tipo de valor que ela esta recebendo.
+   * Exemplo:
+   * let clima:String = t
+   * console.log(clima)
+   *
+   * E esse valor nunca poderia ser alterado.
+   */
+
+  //Para ver o tipo de váriavel que corresponde faço o seguinte:
+
+  let sexo = 0
+  console.log(typeof sexo)
+  //Declarei uma váriavel chamado sexo, porem o valor dela é '0', sendo assim ela é number e não String.
+
+  /*
+   * Posso também alterar o conteudo da váriavel e o tipo dela também da seguinte forma:
+   */
+
+  let flor = 1
+  console.log(
+    'tipo de váriavel de flor: ' + typeof flor + 'Valor de Flor: ' + flor
+  )
+  flor = 'Margarida'
+  console.log(
+    'Tipo de variável de flor: ' + typeof flor + 'Esta flor é uma : ' + flor
+  )
+
+  //Na linguagem de programação moderna usamos os tipos de variáveis let e const, não é utilizado o var.
+</script>
